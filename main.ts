@@ -211,10 +211,10 @@ const CARDS: Card[] = [
   { status: FACT, label: "BEAT 1 • KHARTOUM", head: "4 KILLED", details: ["UN SITE HIT", "SUDAN ARMY BLAMES", "ETHIOPIA"] },
   { status: CLAIM, label: "BEAT 3 • BAHRAIN", head: "2 HURT IN SITRA FIRE", details: ["IRAN CLAIMS 2 TANKERS", "US: NO DAMAGE"] },
   { status: DEV, label: "BEAT 3 • GAZA", head: "3 KILLED", details: ["AID WORKERS", "TALKS SOUGHT"] },
-  { status: FACT, label: "BEAT 3 • TEHRAN", head: "ROLLING BLACKOUTS BEGIN", details: ["CUTS UP TO 2 HOURS", "A DAY"] },
-  { status: FACT, label: "BEAT 2 • ATLANTA", head: "1,600+ FLIGHTS DELAYED", details: ["DELTA SYSTEM OUTAGE", "NOT A HACK"] },
-  { status: FACT, label: "BEAT 2 • HONG KONG", head: "856 FOR 723 SEATS", details: ["TURNOUT 98.79%", "5,640 OF 5,709 VOTE"] },
-  { status: FACT, label: "BEAT 2 • WELLINGTON", head: "720/9 DECLARED", details: ["INDIA LEAD 352", "RAHUL 136 • PANT 128"] },
+  { status: FACT, label: "BEAT 3 • TEHRAN", head: "BLACKOUTS BEGIN", details: ["CUTS UP TO 2 HOURS", "A DAY"] },
+  { status: FACT, label: "BEAT 2 • ATLANTA", head: "1,600+ DELAYED", details: ["DELTA SYSTEM OUTAGE", "NOT A HACK"] },
+  { status: FACT, label: "BEAT 2 • HONG KONG", head: "856 FOR 723 SEATS", details: ["TURNOUT 98.79%", "5,640 VOTE"] },
+  { status: FACT, label: "BEAT 2 • WELLINGTON", head: "720/9 DECLARED", details: ["INDIA LEAD 352", "RAHUL 136"] },
   { status: FACT, label: "BEAT 3 • TURIN", head: "FIRST FINALS TITLE", details: ["BEATS ZVEREV 6-2, 7-6(7)"] },
 ];
 
@@ -268,41 +268,41 @@ function rail() {
 
 function leadCOP31() {
   panel(212, 154, 764, 180, FACT);
-  text("BEAT 2 • COP31 • ANTALYA", 232, 164, 18, MUTED, 4);
-  text("A DAY ENDS WITHOUT A DEAL", 232, 186, 34, INK, 6);
+  text("BEAT 2 • COP31 • ANTALYA", 232, 162, 18, MUTED, 4);
+  text("A DAY ENDS WITHOUT A DEAL", 232, 184, 34, INK, 6);
   text("COP31 COLLAPSES", 232, 224, 40, INK, 6);
-  text("EU + ~130 STATES REJECT FINAL TEXT", 232, 268, 18, MUTED, 4);
-  text("NO FOSSIL-FUEL LANGUAGE", 232, 290, 18, MUTED, 4);
-  text("$120BN TARGET DROPPED • 35% STAYS", 232, 312, 18, MUTED, 4);
+  text("EU + ~130 STATES REJECT FINAL TEXT", 232, 270, 17, MUTED, 4);
+  text("NO FOSSIL-FUEL LANGUAGE", 232, 291, 17, MUTED, 4);
+  text("$120BN TARGET DROPPED • 35% STAYS", 232, 312, 17, MUTED, 4);
   ring(935, 312, 20, 3, FACT);
   rect(934, 292, 3, 41, FACT); rect(915, 311, 41, 3, FACT);
 }
 
 function leadDymer() {
   panel(212, 340, 370, 210, FACT);
-  text("BEAT 1 • UKRAINE", 228, 348, 18, MUTED, 4);
-  text("DYMER", 228, 367, 18, MUTED, 4);
-  text("2 HURT • 14", 228, 388, 30, INK, 6);
-  text("FEARED TRAPPED", 228, 422, 30, INK, 6);
-  text("186 DRONES IN ONE NIGHT", 228, 458, 20, MUTED, 4);
-  text("161 SHOT DOWN", 228, 480, 20, MUTED, 4);
-  text("BLOCK OF FLATS DESTROYED", 228, 502, 20, MUTED, 4);
-  text("KYIV ASKS US FOR PATRIOTS", 228, 524, 20, MUTED, 4);
+  text("BEAT 1 • UKRAINE", 228, 346, 18, MUTED, 4);
+  text("DYMER", 228, 368, 18, MUTED, 4);
+  text("2 HURT • 14", 228, 390, 28, INK, 6);
+  text("FEARED TRAPPED", 228, 424, 28, INK, 6);
+  text("186 DRONES OVERNIGHT", 228, 462, 18, MUTED, 4);
+  text("161 SHOT DOWN", 228, 484, 18, MUTED, 4);
+  text("FLAT BLOCK DESTROYED", 228, 506, 18, MUTED, 4);
+  text("KYIV SEEKS US PATRIOTS", 228, 528, 18, MUTED, 4);
   rect(533, 392, 26, 12, RAIL); rect(560, 394, 10, 8, RAIL);
   rect(538, 403, 18, 3, RAIL); rect(545, 398, 3, 7, RAIL);
 }
 
 function leadCikande() {
   panel(598, 340, 378, 210, FACT);
-  text("BEAT 1 • INDONESIA", 614, 348, 18, MUTED, 4);
-  text("CIKANDE", 614, 367, 18, MUTED, 4);
-  text("3 DEAD • 34", 614, 388, 34, INK, 6);
-  text("MISSING", 614, 428, 34, INK, 6);
-  text("FACTORY FIRE", 614, 466, 32, INK, 6);
-  text("24 BODY BAGS BY NIGHTFALL", 614, 500, 20, MUTED, 4);
-  text("SEARCH GOES ON", 614, 523, 20, MUTED, 4);
-  fillTri(945, 428, 928, 458, 962, 458, DEV);
-  fillTri(945, 440, 936, 458, 954, 458, CLAIM);
+  text("BEAT 1 • INDONESIA", 614, 346, 18, MUTED, 4);
+  text("CIKANDE", 614, 368, 18, MUTED, 4);
+  text("3 DEAD • 34", 614, 390, 34, INK, 6);
+  text("MISSING", 614, 430, 34, INK, 6);
+  text("FACTORY FIRE", 614, 468, 32, INK, 6);
+  text("24 BODY BAGS BY NIGHT", 614, 506, 18, MUTED, 4);
+  text("SEARCH GOES ON", 614, 528, 18, MUTED, 4);
+  fillTri(948, 432, 932, 462, 964, 462, DEV);
+  fillTri(948, 444, 940, 462, 956, 462, CLAIM);
 }
 
 function card(c: Card, x: number, y: number) {
@@ -310,18 +310,18 @@ function card(c: Card, x: number, y: number) {
   rect(x, y, w, h, PANEL2);
   rect(x, y, w, 3, c.status);
   rect(x, y, 3, h, c.status);
-  const labs = wrap(c.label, inner, 15);
-  let yy = y + 10;
-  for (const L of labs) { text(L, x + 12, yy, 15, MUTED, 3); yy += 15; }
+  const labs = wrap(c.label, inner, 13);
+  let yy = y + 8;
+  for (const L of labs) { text(L, x + 12, yy, 13, MUTED, 3); yy += 18; }
   yy += 4;
-  let hl = wrap(c.head, inner, 22); let hs = 22;
-  if (hl.length > 2) { hl = wrap(c.head, inner, 17); hs = 17; }
-  for (const L of hl) { text(L, x + 12, yy, hs, INK, 5); yy += hs + 1; }
+  let hl = wrap(c.head, inner, 18); let hs = 18;
+  if (hl.length > 2) { hl = wrap(c.head, inner, 15); hs = 15; }
+  for (const L of hl) { text(L, x + 12, yy, hs, INK, 4); yy += hs + 6; }
   yy += 2;
   for (const d of c.details) {
-    for (const L of wrap(d, inner, 15)) {
-      if (yy + 15 > y + h - 4) break;
-      text(L, x + 12, yy, 15, MUTED, 3); yy += 15;
+    for (const L of wrap(d, inner, 13)) {
+      if (yy + 13 > y + h - 4) break;
+      text(L, x + 12, yy, 13, MUTED, 3); yy += 18;
     }
   }
 }
@@ -347,7 +347,7 @@ function alsoStrip() {
 
 function bottomRow() {
   text("CLOCK MARKS VERIFIED TIMES ONLY", 48, 1008, 12, MUTED, 3);
-  let rx = 976;
+  let rx = 960;
   rx = miniChip("DEVELOPING", rx, 1004, "dev");
   rx = miniChip("CLAIM", rx, 1004, "claim");
   rx = miniChip("FACT", rx, 1004, "fact");
