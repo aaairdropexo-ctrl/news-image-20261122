@@ -282,13 +282,13 @@ function leadCikande() {
 type Card = { status: number; label: string; head: string; details: string[] };
 const CARDS: Card[] = [
   { status: FACT, label: "BEAT 1 • KHARTOUM", head: "4 KILLED", details: ["UN SITE HIT", "EARLY SUNDAY"] },
-  { status: CLAIM, label: "BEAT 3 • BAHRAIN", head: "2 HURT IN SITRA FIRE", details: ["IRAN CLAIMS 2 TANKERS MINED"] },
+  { status: CLAIM, label: "BEAT 3 • BAHRAIN", head: "2 HURT IN SITRA FIRE", details: ["IRAN CLAIMS 2 TANKERS", "US: NO DAMAGE"] },
   { status: DEV, label: "BEAT 3 • GAZA", head: "3 KILLED", details: ["AID WORKERS", "TALKS SOUGHT"] },
   { status: FACT, label: "BEAT 3 • TEHRAN", head: "ROLLING BLACKOUTS BEGIN", details: ["UP TO 2 HOURS A DAY"] },
   { status: FACT, label: "BEAT 2 • ATLANTA", head: "1,600+ FLIGHTS DELAYED", details: ["OUTAGE, NOT A HACK"] },
   { status: FACT, label: "BEAT 2 • HONG KONG", head: "856 FOR 723 SEATS", details: ["98.79% TURNOUT"] },
   { status: FACT, label: "BEAT 2 • WELLINGTON", head: "720/9 DECLARED", details: ["LEAD 352 RUNS"] },
-  { status: FACT, label: "BEAT 3 • TURIN", head: "FIRST FINALS TITLE", details: ["BEATS ZVEREV 6-2"] },
+  { status: FACT, label: "BEAT 3 • TURIN", head: "FIRST FINALS TITLE", details: ["BEATS ZVEREV 6-2, 7-6(7)"] },
 ];
 function card(x: number, y: number, c: Card) {
   const w = 182, h = 174, inner = w - 24;
@@ -301,7 +301,7 @@ function card(x: number, y: number, c: Card) {
   for (const l of wrap(c.label, inner, 15)) put(l, 15, 17, MUTED, 3);
   cy += 4;
   let hl = wrap(c.head, inner, 22), hs = 22;
-  if (hl.length > 2) { hl = wrap(c.head, inner, 18); hs = 18; }
+  if (hl.length > 2) { hl = wrap(c.head, inner, 17); hs = 17; }
   for (const l of hl) put(l, hs, hs + 3, INK, 4);
   cy += 2;
   for (const d of c.details) for (const l of wrap(d, inner, 15)) put(l, 15, 17, INK, 3);
